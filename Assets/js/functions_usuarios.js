@@ -116,7 +116,7 @@ function fntRolesUsuario(){
     request.onreadystatechange = function(){
         if(request.readyState == 4 && request.status == 200){
             document.querySelector('#listRolid').innerHTML = request.responseText;
-            document.querySelector('#listRolid').value = 1;
+           // document.querySelector('#listRolid').value = 1;
             $('#listRolid').selectpicker('render');
         }
     }
